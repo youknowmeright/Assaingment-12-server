@@ -51,7 +51,7 @@ async function run() {
       }
     });
 
-// for testing purpose only 🥺
+// for testing purpose only 🥺🥺
     app.get("/applications", async (req, res) => {
   const apps = await applicationsCollection.find().toArray();
   res.send(apps);
@@ -65,6 +65,7 @@ async function run() {
   res.send(apps);
 });
     app.get("/users", async (req, res) => {
+
   const apps = await usersCollection.find().toArray();
   res.send(apps);
 });
@@ -210,7 +211,7 @@ run().catch(console.dir);
 
 // DEFAULT ROUTE
 app.get('/', (req, res) => {
-  res.send('Scholarship management server is running');
+  res.send('Scholarship management server is running smoothly');
 });
 
 // START SERVER
